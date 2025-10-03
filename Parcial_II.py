@@ -73,9 +73,9 @@ class Cola:
     
 ''' 5- Implemente una función en Python que use una pila para invertir una lista '''
 
-def invertir_cadena(cadena):
+def invertir_lista(lista):
     pila = Pila() #Asigno una variable a la clase Pila
-    for c in cadena: #Recorro la cadena
+    for c in lista: #Recorro la cadena
         pila.insertar(c) #Inserto cada elemento de la cadena en la pila
     cadena_invertida = [] #Como necesito devolver la lista vacia, creo una una variable para guardar
     while not pila.esta_vacia(): #Uso el metodo esta_vacia de la clase Pila para recorrer hasta que el bucle se termine
@@ -84,7 +84,7 @@ def invertir_cadena(cadena):
 
 p = Pila()
 p = [1,2,3,"hola mundo"]
-print(invertir_cadena(p))
+print(invertir_lista(p))
 
 ''' 6- Escriba una función que verifique si los paréntesis, corchetes y llaves en una
     expresión están balanceados usando una pila. Ejemplo: "{[()]}" Válido, "{[(])}" → →
